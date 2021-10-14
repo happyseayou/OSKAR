@@ -198,6 +198,8 @@ if (CUDA_FOUND)
             list(APPEND CUDA_NVCC_FLAGS -gencode arch=compute_61,code=sm_61)
             list(APPEND CUDA_NVCC_FLAGS -gencode arch=compute_70,code=sm_70)
             list(APPEND CUDA_NVCC_FLAGS -gencode arch=compute_75,code=sm_75)
+            list(APPEND CUDA_NVCC_FLAGS -gencode arch=compute_80,code=sm_80)
+            list(APPEND CUDA_NVCC_FLAGS -gencode arch=compute_86,code=sm_86)
             # Don't add 8.0 or 8.6 to defaults yet - can manually
             # specify it though.
         elseif (ARCH MATCHES 2.0)
